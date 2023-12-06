@@ -13,7 +13,6 @@ make -j
 ./centration
 ```
 
-
 <div align="center">
-  <img src="https://github.com/gxnse/centration/assets/94934738/40abe901-29a8-4f2d-8654-e4b2f55ee151" alt="work">
+<img src="https://github.com/gxnse/centration/assets/94934738/24a8a071-2490-496d-8b19-9b546161e895" alt="work">
 </div>
