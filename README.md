@@ -3,7 +3,7 @@
   <img src="https://github.com/gxnse/centration/assets/94934738/a46bbc33-de1e-43eb-87e4-5e8a01af705e" alt="results_prev">
 </div>
 
-###To compile & run:
+To compile & run:
 ```
 (in the root directory)
 mkdir build
