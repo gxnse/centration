@@ -11,3 +11,4 @@ cmake ..
 make -j
 ./centration
 ```
+![work](https://github.com/gxnse/centration/assets/94934738/40abe901-29a8-4f2d-8654-e4b2f55ee151)
