@@ -74,16 +74,16 @@ std::pair<double, double> dataCentration::calculateOffset(const vector<vector<do
   size_t maxFingersLengthIndex = std::distance(firstSampleData.begin(), std::max_element(firstSampleData.begin(), firstSampleData.end()));
   size_t minFingersLengthIndex = std::distance(firstSampleData.begin(), std::min_element(firstSampleData.begin(), firstSampleData.end()));
 
-  // Tool's position calculation (converting from polar to Cartesian coordinates)
-  double toolsTheta = (2 * M_PI * minFingersLengthIndex / numOfFingers);    // Angle (theta) in [rad]
-  double toolsPositionX = minFingersLength * cos(toolsTheta);               // x=r*cos(theta)
-  double toolsPositionY = minFingersLength * sin(toolsTheta);               // y=r*sin(theta)
+  // Min length Finger's position calculation (converting from polar to Cartesian coordinates)
+  double Theta = (2 * M_PI * minFingersLengthIndex / numOfFingers);            // Angle (theta) in [rad]
+  double minFigerPositionX = minFingersLength * cos(Theta);                    // x=r*cos(theta)
+  double minFigerPositionY = minFingersLength * sin(Theta);                    // y=r*sin(theta)
 
-  std::cout << "The position of the MIT Caliper: X = " << toolsPositionX << " Y = " << toolsPositionY << std::endl;
+  std::cout << "The used min length finger's position: X = " << minFigerPositionX << " Y = " << minFigerPositionY << std::endl;
 
   // Offset's calculation
-  double offsetX = ((maxFingersLength - minFingersLength) / 2) * cos(toolsTheta);
-  double offsetY = ((maxFingersLength - minFingersLength) / 2) * sin(toolsTheta);
+  double offsetX = ((maxFingersLength - minFingersLength) / 2) * cos(Theta);
+  double offsetY = ((maxFingersLength - minFingersLength) / 2) * sin(Theta);
 
   std::cout << "The derived offset: X = " << offsetX << " Y = " << offsetY << std::endl;
 
