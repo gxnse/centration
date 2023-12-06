@@ -4,6 +4,7 @@
 
 To compile & run:
 ```
+(in the root directory)
 mkdir build
 cd build
 cmake ..
